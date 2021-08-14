@@ -168,7 +168,7 @@ const MaterialMock = () => {
         actions={[
           {
             icon: () => <GetAppIcon/>,
-            tooltip: "Click me to download",
+            tooltip: "Custom button",
             onClick: (e, data) => console.log("custom-but", data),
             isFreeAction: true,
           },
