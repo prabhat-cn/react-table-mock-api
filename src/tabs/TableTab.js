@@ -1,5 +1,6 @@
 import React from 'react'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import MaterialApi from '../tables/MaterialApi';
 import MaterialCustomButton from '../tables/MaterialCustomButton';
 import MaterialMock from '../tables/MaterialMock';
 
@@ -10,6 +11,7 @@ const TableTab = () => {
                 <TabList>
                 <Tab>Mock Table</Tab>
                 <Tab>Custom Button</Tab>
+                <Tab>Api Table</Tab>
                 </TabList>
 
                 <TabPanel>
@@ -17,6 +19,9 @@ const TableTab = () => {
                 </TabPanel>
                 <TabPanel>
                     <MaterialCustomButton />
+                </TabPanel>
+                <TabPanel>
+                    <MaterialApi />
                 </TabPanel>
             </Tabs>
         </>
